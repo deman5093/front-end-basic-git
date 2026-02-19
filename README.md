@@ -1,1 +1,3 @@
-# front-end-basic-git
+# Front End Basic course
+
+### homework template
