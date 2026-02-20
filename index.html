@@ -1,20 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework template</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
 </head>
 <body>
-    <header></header>
-    <main>
-        <section>
-            <h1>Homework template</h1>
-            <p>Hello</p>
-            <img src="./image/nature.jpeg" alt="nature" width="500"> 
-        </section>
-    </main>
-    <footer></footer>
+<main>
+    <form class="form" style="max-width: 300px; margin: auto;">
+        <h2 class="title">Login I <span style="color: green;">Register</span></h2>
+        <p>Enter your email and password to register.</p>
+        <p>
+        <input type="text" id="fullname" name="fullname" placeholder="Username" required>
+    </p>
+        <p>
+            <label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+            </label>
+        </p>
+        <p>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+        </p>
+        <input type="password" name="confirm password" id="Confirm Password" placeholder="Confirm Password" required>
+        <p>
+            <button class="register">Register</button>
+        </p>
+        <p class="with">Or register with</p>
+        <button type="button" class="social-button"><img src="google.png" alt="google">Continue with Google</button>
+        <br> <br>
+        <button type="button" class="social-button"><img src="facebook.png" alt="facebook">Continue with Facebook</button>
+    </form>
+</main>
+<br> <br> <br> <br> <br>
+<footer class="footer"></footer>
+
+
 </body>
 </html>
