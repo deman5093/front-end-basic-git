@@ -1,0 +1,137 @@
+
+.header  {
+    padding-block:24px;
+    margin-left:100px;
+    border-bottom: 1px solid grey;
+}
+
+
+.logo{
+    display: flex;
+    text-decoration: none;
+    color: green;
+    font-size: 32px;
+   margin-top: 40px;
+   width: 34px;
+    height: 34px;
+}
+
+
+.menu-link{
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+    color:rgba(61, 61, 61, 1)
+
+}
+
+.nav{
+    margin-left: 500px;
+}
+
+ .menu, .nav, .menu-item{
+    display: inline-block;
+    font-size: 32px;
+ }
+
+ .container{
+    display:flex;
+ }
+ .menu-item + .menu-item {
+    margin-left: 75px;
+ }
+
+ .button{
+    width:100px;
+    height:35px;
+    background-color: rgba(70, 163, 88, 1);
+    margin-left: 500px;
+    margin-top: 30px;
+    text-decoration: none;
+    border:none;
+ }
+
+.login{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+.img{
+    width: 20px;
+    height: 20px;
+    top:7px;
+    left:17px;
+}
+
+
+.first-section{
+    background-color: rgba(245, 245, 245, 0.5);
+    margin-left: 150px;
+    padding-block:200px;
+    max-width:1670px;
+    max-height:200px;
+}
+
+
+.welcome{
+    width: 205px;
+    font-size: 17px; 
+    line-height: 16px;
+     margin-top: -115px;
+     margin-left: 50px;
+    white-space: nowrap;
+}
+.main-title{
+     width: 520px;
+    height: 140px;
+    margin-left: -200px;
+    margin-top: -90px;
+    font-size: 70px;
+    white-space: nowrap
+   
+
+}
+.planet{
+    color:rgba(70, 163, 88, 1);
+}
+.p2{
+    width: 557px;
+    font-size: 15px; 
+    line-height: 24px;
+     margin-top: 87px;
+     margin-left: -515px;
+     color:rgba(114, 114, 114, 1);
+}
+.plant{
+    position: relative;
+    top: 20px;
+    width: 507px;
+    height: 450px;
+    margin-left:400px;
+      margin-top: -178px;
+}
+.shop{
+     white-space: nowrap;
+     width: 140px;
+     height: 40px;
+     margin-top: 200px;
+     margin-left: -1450px;
+     background-color: rgba(70, 163, 88, 1);
+     border: none;
+     cursor: pointer;
+}
+.now{
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
