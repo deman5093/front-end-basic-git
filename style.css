@@ -1,0 +1,202 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:30px 120px;
+}
+
+.logo{
+    text-decoration:none;
+    color:green;
+    font-size:32px;
+    display:flex;
+    align-items:center;
+    
+}
+
+.menu{
+    
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.menu-item{
+    display:inline-block;
+    margin-right:50px;
+   
+}
+
+.menu-link{
+    text-decoration:none;
+    color:#3d3d3d;
+    font-size:20px;
+    padding-bottom:5px;
+}
+
+.head{
+    display:flex;
+    align-items:center;
+    gap:100px;
+}
+
+.button{
+    width:100px;
+    height:35px;
+    background-color:rgba(70,163,88,1);
+    border:none;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+    cursor:pointer;
+}
+
+.login{
+    color:white;
+    font-size:16px;
+}
+
+.main{
+background:#F5F5F5;
+margin:40px 120px;
+padding:60px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.main-text{
+max-width:500px;
+}
+
+.welcome{
+font-size:14px;
+letter-spacing:2px;
+color:#3D3D3D;
+}
+
+.main-title{
+font-size:70px;
+margin:20px 0;
+}
+
+.planet{
+color:#46A358;
+white-space: nowrap;
+
+
+
+}
+
+.p2{
+color:#727272;
+margin-bottom:25px;
+}
+
+.shop{
+background:#46A358;
+height:40px;
+width:140px;
+border:none;
+cursor:pointer;
+}
+
+.main-title {
+    white-space: nowrap;
+}
+.now{
+color:white;
+font-size:16px;
+}
+.menu-link:hover{
+    color:#46A358;
+    border-bottom:5px solid #46A358;
+}
+.menu-list{
+    border:1px solid lightgray;
+    padding:8px 24px;
+     list-style: none;
+     
+    
+    
+     
+    
+}
+.menu-list:hover{
+    background-color: rgba(26, 113, 42, 1);}
+
+   
+
+.child{
+    display:none;
+    position:absolute;
+   left:100%;
+   background-color: rgba(237, 246, 238, 1);
+    top:0;
+    z-index: 1;
+    text-decoration: none;
+     width: 160px;
+    padding-left: 5px;
+  margin-top: 8px;
+  
+
+   
+     
+   
+    
+     
+   
+
+
+}
+
+
+.parent:hover > .child{
+    display:block;
+     list-style: none;
+     
+    
+    
+     
+        
+     
+  
+
+}
+.menu > .parent > .child{
+    top:100%;
+    left:0;
+    
+}
+.parent{
+    position:relative;
+    cursor:pointer;
+    
+    
+    
+    
+  
+
+}
+.link{
+    text-decoration: none;
+    color:rgba(61, 61, 61, 1);
+    font-size: 18px;
+     
+    
+   
+  
+   
+}
+.white:hover{
+    color:white;
+}
+.link:hover{
+    background-color: rgba(26, 113, 42, 1);
+ 
+}
+
+
