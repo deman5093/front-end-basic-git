@@ -48,18 +48,18 @@ label {
     padding-left: 30px;
 }
 
-/* Стиль для активного (вибраного) тексту */
+
 input:checked + span {
     color: #4CAF50;
     font-weight: normal;
 }
 
-/* Стиль для невибраного тексту */
+
 input + span {
     color: #999;
 }
 
-/* Псевдоелементи для іконок */
+
 .checkmark::before, .custom-check::before {
     position: absolute;
     left: 0;
@@ -67,26 +67,26 @@ input + span {
     display: none;
 }
 
-/* Показуємо іконку тільки коли вибрано */
+
 input:checked + .checkmark::before,
 input:checked + .custom-check::before {
     display: block;
     color: #4CAF50;
 }
 
-/* Стрілочка для першого списку - приховується за замовчуванням */
+
 .checkmark.arrow::before {
     content: '➡';
     display: none;
 }
 
-/* Показуємо стрілочку коли вибрано */
+
 input:checked + .checkmark.arrow::before {
     display: block;
     color: #4CAF50;
 }
 
-/* Іконки для другого списку - приховуються за замовчуванням */
+
 .custom-check.icon-v::before { 
     content: '✔'; 
     display: none;
@@ -100,7 +100,7 @@ input:checked + .checkmark.arrow::before {
     display: none;
 }
 
-/* Показуємо іконку коли вибрано */
+
 input:checked + .custom-check.icon-v::before { 
     display: block;
     color: #4CAF50; 
