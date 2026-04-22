@@ -1,0 +1,190 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Схожий шрифт з картинки */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+legend {
+    font-size: 14px;
+    color: #888;
+    padding: 0 10px;
+}
+
+/* Приховуємо дефолтні інпути */
+input[type="radio"], input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #777;
+    position: relative;
+    padding-left: 30px;
+}
+
+/* Стиль для активного (вибраного) тексту */
+input:checked + span {
+    color: #4CAF50;
+    font-weight: normal;
+}
+
+/* Стиль для невибраного тексту */
+input + span {
+    color: #999;
+}
+
+/* Псевдоелементи для іконок */
+.checkmark::before, .custom-check::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+/* Показуємо іконку тільки коли вибрано */
+input:checked + .checkmark::before,
+input:checked + .custom-check::before {
+    display: block;
+    color: #4CAF50;
+}
+
+/* Стрілочка для першого списку - приховується за замовчуванням */
+.checkmark.arrow::before {
+    content: '➡';
+    display: none;
+}
+
+/* Показуємо стрілочку коли вибрано */
+input:checked + .checkmark.arrow::before {
+    display: block;
+    color: #4CAF50;
+}
+
+/* Іконки для другого списку - приховуються за замовчуванням */
+.custom-check.icon-v::before { 
+    content: '✔'; 
+    display: none;
+}
+.custom-check.icon-circle::before { 
+    content: '🔘'; 
+    display: none;
+}
+.custom-check.icon-power::before { 
+    content: '⏻'; 
+    display: none;
+}
+
+/* Показуємо іконку коли вибрано */
+input:checked + .custom-check.icon-v::before { 
+    display: block;
+    color: #4CAF50; 
+}
+input:checked + .custom-check.icon-circle::before { 
+    display: block;
+    color: #4CAF50; 
+}
+input:checked + .custom-check.icon-power::before { 
+    display: block;
+    color: #4CAF50; 
+}
+
+
+.send-btn {
+    background: linear-gradient(to bottom, #5f5, #2a2);
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px #151;
+}
+
+.send-btn:active {
+    box-shadow: 0 2px #151;
+    transform: translateY(2px);
+}
+
+
+.toggle-container {
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 34px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.toggle-container input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 25px;
+    left: 1px;
+    bottom: 4px;
+    background-color: white;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+input:checked + .toggle-slider {
+    background-color: #4CAF50;
+}
+
+input:checked + .toggle-slider:before {
+    transform: translateX(26px);
+}
+
+.toggle-text {
+    position: absolute;
+    left: 70px;
+    top: 60%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 14px;
+}

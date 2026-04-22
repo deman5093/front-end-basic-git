@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма з псевдоелементами</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Якась форма, яка щось робить</h1>
+        
+        <form>
+            <fieldset>
+                <legend>Виберіть один із варіантів</legend>
+                <label class="radio-container">
+                    <input type="radio" name="option" checked>
+                    <span class="checkmark arrow">Перший</span>
+                </label>
+                <label class="radio-container">
+                    <input type="radio" name="option">
+                    <span class="checkmark arrow">Другий</span>
+                </label> 
+                <label class="radio-container">
+                    <input type="radio" name="option">
+                    <span class="checkmark arrow">Третій</span>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Виберіть додаткові варіанти</legend>
+                <label class="check-container">
+                    <input type="checkbox" checked>
+                    <span class="custom-check icon-v">Якийсь варіант відповіді</span>
+                </label>
+                <label class="toggle-container">
+                    <input type="checkbox" id="toggle">
+                    <span class="toggle-slider"></span>
+                    <span class="toggle-text">Другий варіант відповіді</span>
+                </label>
+                <label class="check-container">
+                    <input type="checkbox">
+                    <span class="custom-check icon-power">  Ще варіант відповіді</span>
+                </label>
+              
+            </fieldset>
+
+            <button type="submit" class="send-btn">Send</button>
+        </form>
+    </div>
+</body>
+</html>
