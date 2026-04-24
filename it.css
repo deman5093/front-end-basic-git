@@ -1,0 +1,280 @@
+/* Темна тема та градієнт */
+.dark-theme {
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    color: white;
+}
+
+.text-center { text-align: center; }
+
+.service-icon-box {
+    background: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto 30px;
+}
+
+.service-title {
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.service-description {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #24a3d9;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 60px 0 30px;
+}
+
+.sub-title {
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+/* Сітка для списку послуг */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    text-align: left;
+}
+
+.list-column {
+    list-style: none;
+    padding: 0;
+}
+
+.list-column li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.4;
+}
+
+.list-column li::before {
+    content: "•";
+    color: #F0145A;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* --- АДАПТИВНІСТЬ (@media) --- */
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr; /* Одна колонка на мобільних */
+    }
+    
+    .service-title {
+        font-size: 28px;
+    }
+    
+    .service-description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-icon-box {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .btn-primary {
+        width: 100%; /* Кнопка на всю ширину */
+        box-sizing: border-box;
+    }
+}
+.publications-section {
+    background-color: #F5F5F7;
+    padding: 60px 0;
+}
+
+.section-link {
+    color: #24A3D9;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.section-heading {
+    color: #F0145A;
+    font-size: 38px;
+    margin: 10px 0 30px;
+}
+
+.publications-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.pub-card {
+    background: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.pub-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.gdpr-blue {
+    background-color: #003399;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pub-body {
+    padding: 30px;
+}
+
+.pub-title a {
+    color: #24A3D9;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pub-date {
+    color: #B3B3BA;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+hr {
+    border: none;
+    border-top: 4px solid #E6E6F0;
+    margin-bottom: 15px;
+}
+
+.pub-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+/* --- АДАПТАЦІЯ (@media) --- */
+
+/* Планшети */
+@media (max-width: 1024px) {
+    .publications-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 картки в ряд */
+    }
+}
+
+/* Мобільні пристрої */
+@media (max-width: 768px) {
+    .publications-grid {
+        grid-template-columns: 1fr; /* 1 картка в ряд */
+    }
+    
+    .section-heading {
+        font-size: 30px;
+    }
+    
+    .pub-body {
+        padding: 20px;
+    }
+}
+.site-footer {
+    background-color: #f5f5f7;
+    padding: 30px 0;
+    border-top: 2px solid #e6e6f0; 
+   
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.footer-row-top, .footer-row-bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.address, .copyright {
+    color: #323264; 
+    font-size: 16px;
+}
+
+
+.map-link {
+    color: #24a3d9;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.phone {
+    color: #46466e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.email {
+    color: #24a3d9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dot {
+    color: #b3b3ba;
+}
+
+.copyright {
+    color: #b3b3ba;
+}
+
+
+.social-icon img {
+    width: 38px;
+    height: 38px;
+}
