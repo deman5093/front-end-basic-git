@@ -1,0 +1,444 @@
+@media (max-width: 540px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        padding: 10px 15px;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .main {
+        margin: 10px 15px;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-title {
+        font-size: 30px;
+    }
+
+    .head {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .menu-item {
+        margin-right: 10px;
+    }
+
+    .card_2 {
+        display: block;
+        margin: 15px auto;
+        max-width: 100%;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .container {
+        padding: 0 10px;
+        flex-direction: column;
+    }
+
+    .sort {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .header .header {
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .plants, .plant_2 {
+        text-align: center;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .box, .newsletter {
+        width: 100%;
+    }
+
+    .footer-middle {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .shop-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    .imag {
+        float: none;
+        width: 100%;
+    }
+
+    .child {
+        display: none;
+    }}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 30px;
+    }
+
+    .main {
+        margin: 20px 30px;
+        padding: 30px;
+    }
+
+    .main-title {
+        font-size: 40px;
+    }
+
+    .head {
+        gap: 20px;
+    }
+
+    .menu-item {
+        margin-right: 20px;
+    }
+
+    .card_2 {
+        display: inline-block;
+        margin: 20px;
+        width: calc(50% - 40px);
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .container {
+        gap: 20px;
+    }
+
+    .sort {
+        width: 150px;
+    }
+
+    .header .header {
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .footer-top {
+        gap: 20px;
+    }
+
+    .box {
+        width: 200px;
+    }
+
+    .newsletter {
+        width: 250px;
+    }
+
+    .footer-middle {
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .footer-bottom {
+        gap: 30px;
+    }
+
+    .shop-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    .imag {
+        width: 50%;
+    }
+
+    .child {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 20px 50px;
+        margin-left: 10px;
+    }
+
+    .main {
+        margin: 30px 50px;
+        padding: 40px;
+    }
+
+    .main-title {
+        font-size: 50px;
+    }
+
+    .head {
+        gap: 30px;
+    }
+
+    .menu-item {
+        margin-right: 30px;
+    }
+
+    .card_2 {
+        margin: 25px;
+        width: calc(33.33% - 50px);
+    }
+
+    .sidebar {
+        width: 250px;
+    }
+
+    .header .header {
+        padding: 40px 30px;
+    }
+
+    .footer-top {
+        gap: 30px;
+    }
+
+    .box {
+        width: 220px;
+    }
+
+    .newsletter {
+        width: 280px;
+    }
+
+    .footer-middle {
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        gap: 40px;
+    }
+
+    .shop-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 25px 70px;
+        margin-left: 20px;
+    }
+
+    .main {
+        margin: 35px 70px;
+        padding: 50px;
+    }
+
+    .main-title {
+        font-size: 60px;
+    }
+
+    .head {
+        gap: 40px;
+    }
+
+    .menu-item {
+        margin-right: 40px;
+    }
+
+    .card_2 {
+        margin: 30px;
+        width: calc(25% - 60px);
+    }
+
+    .sidebar {
+        width: 280px;
+    }
+
+    .header .header {
+        padding: 50px 40px;
+    }
+
+    .shop-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}/* 1200px */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+
+    .shop-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .plant {
+        max-width: 400px;
+        margin-top: 20px;
+    }
+}
+
+/* 992px */
+@media (max-width: 992px) {
+    .head {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .plants {
+        text-align: center;
+    }
+
+    .plant_2 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .p2 {
+        font-size: 14px;
+    }
+
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card_2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-middle {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* 540px */
+@media (max-width: 540px) {
+    .logo strong {
+        font-size: 16px;
+    }
+
+    .main-title {
+        font-size: 22px;
+    }
+
+    .welcome {
+        font-size: 12px;
+    }
+
+    .button,
+    .shop {
+        width: 100%;
+    }
+
+    .log {
+        display: none;
+    }
+
+    .menu {
+        display: none; /* можна замінити на бургер */
+    }
+
+    .sort {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .plants,
+    .plant_2 {
+        padding: 10px;
+    }
+
+    .newsletter input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+    }
+}
